@@ -30,3 +30,11 @@ Do not commit API keys. The notebook reads the Gemini key from Colab Secrets.
 
 ## Note
 PyMuPDF extracts text from digital PDFs. Scanned/image-only PDFs require OCR before the RAG stage.
+
+
+## Working Demo
+Open `Pharmaceutical_RAG_Working_Demo.ipynb` in Google Colab for an end-to-end demonstration using the same pipeline as the full project.
+
+The demo automatically creates a synthetic five-page pharmaceutical bundle containing a Certificate of Quality, Packaging Specification, BSE/TSE Declaration, and Supplier Qualification record. It then runs the complete classification, document-boundary detection, metadata tagging, chunking, MiniLM embedding, vector + BM25 retrieval, query routing, reranking, grounded Gemini generation, citations, and Gradio interface.
+
+Add `GOOGLE_API_KEY` to Colab Secrets before running it. The API key is never stored in this repository.
